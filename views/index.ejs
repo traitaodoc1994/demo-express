@@ -16,7 +16,14 @@
           <th>Fullname</th>
           <th>Age</th>
         </tr>
-        
+        <% list_users.forEach(function(user){%>
+        <tr>
+          <td><%= user.user_name %></td>
+          <td><%= user.address %></td>
+          <td><%= user.full_name %></td>
+          <td><%= user.age %></td>
+        </tr>
+        <%}) %>
     </table>
   </body>
 </html>
